@@ -31,7 +31,7 @@ jobs:
       - save_cache:
           paths:
             - ./vendor
-          key: v1-dependencies-{{ checksum "sf-project/composer.json" }}
+          key: v1-dependencies-{{ checksum "docker-symfony/docker-symfony/composer.json" }}
 
       # run tests!
       - run: cd docker-symfony && cd docker-symfony && chmod +x bin/phpunit && bin/phpunit
