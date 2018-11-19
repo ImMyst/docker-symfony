@@ -2,7 +2,7 @@
 
 ## Avancement
 
-Ajouter phpunit pour CircleCI
+Faire le stack docker-monitoring dans un autre repo
 
 Fait avec :heart: par :
 
