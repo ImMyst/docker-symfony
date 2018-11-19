@@ -22,17 +22,17 @@ jobs:
       # Download and cache dependencies
       - restore_cache:
           keys:
-          - v1-dependencies-{{ checksum "docker-symfony/docker-symfony/composer.json" }}
+          - v1-dependencies-{{ checksum "docker-symfony/composer.json" }}
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - run: cd docker-symfony && cd docker-symfony && composer install -n --prefer-dist
+      - run: cd docker-symfony && composer install -n --prefer-dist
 
       - save_cache:
           paths:
             - ./vendor
-          key: v1-dependencies-{{ checksum "docker-symfony/docker-symfony/composer.json" }}
+          key: v1-dependencies-{{ checksum "docker-symfony/composer.json" }}
 
       # run tests!
-      - run: cd docker-symfony && cd docker-symfony && composer install && chmod +x bin/phpunit && bin/phpunit
+      - run: cd docker-symfony && composer install && chmod +x bin/phpunit && bin/phpunit
 
