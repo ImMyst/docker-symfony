@@ -34,5 +34,5 @@ jobs:
           key: v1-dependencies-{{ checksum "docker-symfony/composer.json" }}
 
       # run tests!
-      - run: cd docker-symfony && composer install && chmod +x bin/phpunit && bin/phpunit
+      - run: cd docker-symfony && phpunit
 
