@@ -2,8 +2,9 @@
 
 ## Avancement
 
-Faire le stack docker-monitoring dans un autre repo
-
+Toutes les étapes en relation avec ce repo ont été effectuées.
+Le controller affichant `Hello World` marche et est disponible à l'adresse local suivante : `localhost:8081`.
+Le networking pour connecter les deux projets est également fonctionnel sur les deux projets.
 
 ## Lien CircleCI
 
