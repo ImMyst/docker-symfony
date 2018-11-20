@@ -2,16 +2,12 @@
 
 
 {% block body %}
-  <div class="container">
-    <h1>Hello World</h1>
-  </div>
-
   <style>
     * {
       box-sizing: border-box;
     }
 
-    html {
+    body {
       font-family: sans-serif;
       background-color: crimson;
       overflow: hidden;
@@ -19,15 +15,28 @@
 
     .container {
       position: absolute;
-      top: 40%;
-      left: 40%;
+      top: 15%;
+      left: 35%;
     }
 
-    h1 {
+    .container > * {
       text-transform: uppercase;
       color: gold;
-      font-size: 55px;
+      text-align: center;
       vertical-align: middle;
     }
+
+    .container > h1 {
+      font-size: 55px;
+    }
+
+    .container > h2 {
+      font-size: 10px;
+    }
   </style>
+  <div class="container">
+    <h1>Hello World !</h1>
+    <h3>Merci merci</h3>
+    <img src="https://cdn.shopify.com/s/files/1/1061/1924/files/Hugging_Face_Emoji_2028ce8b-c213-4d45-94aa-21e1a0842b4d_large.png?15202324258887420558" width: 200px>
+  </div>
 {% endblock %}
